@@ -1,0 +1,180 @@
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="Vonn" id="1">
+
+        <createTable tableName="Product">
+            <column name="id" autoIncrement="true" type="integer">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="productName" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="productDesc"  type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="productType" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="productQuantity" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="unitPrice"  type="integer">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <insert tableName="Product">
+            <column name="productName" value="Apple"/>
+            <column name="productDesc" value="Fresh Red Apple"/>
+            <column name="productType" value="FOOD"/>
+            <column name="productQuantity" value="100"/>
+            <column name="unitPrice" value="2"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Bread"/>
+            <column name="productDesc" value="Whole Wheat Bread"/>
+            <column name="productType" value="FOOD"/>
+            <column name="productQuantity" value="50"/>
+            <column name="unitPrice" value="1"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Milk"/>
+            <column name="productDesc" value="Organic Whole Milk"/>
+            <column name="productType" value="FOOD"/>
+            <column name="productQuantity" value="30"/>
+            <column name="unitPrice" value="3"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Tennis Racket"/>
+            <column name="productDesc" value="High-Quality Tennis Racket"/>
+            <column name="productType" value="SPORTS"/>
+            <column name="productQuantity" value="20"/>
+            <column name="unitPrice" value="150"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Soccer Ball"/>
+            <column name="productDesc" value="Standard Size Soccer Ball"/>
+            <column name="productType" value="SPORTS"/>
+            <column name="productQuantity" value="25"/>
+            <column name="unitPrice" value="25"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Running Shoes"/>
+            <column name="productDesc" value="Comfortable Running Shoes"/>
+            <column name="productType" value="SPORTS"/>
+            <column name="productQuantity" value="15"/>
+            <column name="unitPrice" value="75"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Vacuum Cleaner"/>
+            <column name="productDesc" value="Powerful Vacuum Cleaner"/>
+            <column name="productType" value="HOUSEHOLD"/>
+            <column name="productQuantity" value="10"/>
+            <column name="unitPrice" value="200"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Dishwasher Detergent"/>
+            <column name="productDesc" value="Cleans Dishes Effectively"/>
+            <column name="productType" value="HOUSEHOLD"/>
+            <column name="productQuantity" value="40"/>
+            <column name="unitPrice" value="10"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Laundry Basket"/>
+            <column name="productDesc" value="Large Laundry Basket"/>
+            <column name="productType" value="HOUSEHOLD"/>
+            <column name="productQuantity" value="30"/>
+            <column name="unitPrice" value="15"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Guitar"/>
+            <column name="productDesc" value="Acoustic Guitar"/>
+            <column name="productType" value="MUSIC"/>
+            <column name="productQuantity" value="12"/>
+            <column name="unitPrice" value="300"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Drum Set"/>
+            <column name="productDesc" value="Complete Drum Set"/>
+            <column name="productType" value="MUSIC"/>
+            <column name="productQuantity" value="8"/>
+            <column name="unitPrice" value="600"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Headphones"/>
+            <column name="productDesc" value="Noise-Canceling Headphones"/>
+            <column name="productType" value="MUSIC"/>
+            <column name="productQuantity" value="25"/>
+            <column name="unitPrice" value="120"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Smartphone"/>
+            <column name="productDesc" value="Latest Model Smartphone"/>
+            <column name="productType" value="ELECTRONIC"/>
+            <column name="productQuantity" value="50"/>
+            <column name="unitPrice" value="700"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Laptop"/>
+            <column name="productDesc" value="High-Performance Laptop"/>
+            <column name="productType" value="ELECTRONIC"/>
+            <column name="productQuantity" value="20"/>
+            <column name="unitPrice" value="1200"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Smartwatch"/>
+            <column name="productDesc" value="Waterproof Smartwatch"/>
+            <column name="productType" value="ELECTRONIC"/>
+            <column name="productQuantity" value="30"/>
+            <column name="unitPrice" value="250"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Refrigerator"/>
+            <column name="productDesc" value="Energy-Efficient Refrigerator"/>
+            <column name="productType" value="APPLIANCES"/>
+            <column name="productQuantity" value="15"/>
+            <column name="unitPrice" value="900"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Washing Machine"/>
+            <column name="productDesc" value="Front-Loading Washing Machine"/>
+            <column name="productType" value="APPLIANCES"/>
+            <column name="productQuantity" value="12"/>
+            <column name="unitPrice" value="600"/>
+        </insert>
+
+        <insert tableName="Product">
+            <column name="productName" value="Microwave Oven"/>
+            <column name="productDesc" value="Compact Microwave Oven"/>
+            <column name="productType" value="APPLIANCES"/>
+            <column name="productQuantity" value="25"/>
+            <column name="unitPrice" value="100"/>
+        </insert>
+
+        <createSequence sequenceName="PRODUCT_SEQUENCE" startValue="1"/>
+
+
+        <rollback>
+            <dropTable tableName="product" cascadeConstraints="true"/>
+            <dropSequence sequenceName="PRODUCT_SEQUENCE"/>
+        </rollback>
+
+    </changeSet>
+</databaseChangeLog>
